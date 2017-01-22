@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicAnalyze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-xM-0J0">
+                                <rect key="frame" x="63" y="542" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="J"/>
+                                <connections>
+                                    <action selector="JButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BdO-jl-3Y2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPU-w4-SX4">
+                                <rect key="frame" x="101" y="542" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="ChromeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQP-Ee-JYs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNY-Y7-XbI">
+                                <rect key="frame" x="25" y="542" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="H"/>
+                                <connections>
+                                    <action selector="hueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upH-zc-WMX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj8-zZ-gdc">
+                                <rect key="frame" x="53" y="9" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CJ"/>
+                                <connections>
+                                    <action selector="displayJPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKy-B6-JDn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQp-VB-RYt">
+                                <rect key="frame" x="15" y="9" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CH"/>
+                                <connections>
+                                    <action selector="displayHuePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5j3-UU-Gtw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQI-Li-Qxk">
+                                <rect key="frame" x="548" y="270" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="switchPicForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjR-4F-pjZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ono-Bj-t4h">
+                                <rect key="frame" x="22" y="270" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="switchPicBackward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgW-EA-Vi4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-24-FIO">
+                                <rect key="frame" x="468" y="4" width="122" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="0.99999994039999995" green="0.13564386775455112" blue="0.1500498022986419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="OPTIMIZE">
+                                    <color key="titleColor" red="0.99999994039999995" green="0.249344574065237" blue="0.26185549683748299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="optimizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3q-v6-WiN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csQ-7d-c3Q">
+                                <rect key="frame" x="91" y="9" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CC"/>
+                                <connections>
+                                    <action selector="displayChromePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rR3-yY-2OC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="csQ-7d-c3Q" firstAttribute="leading" secondItem="Xj8-zZ-gdc" secondAttribute="trailing" constant="8" id="0Un-U8-VjI"/>
+                            <constraint firstItem="ceI-xM-0J0" firstAttribute="leading" secondItem="FNY-Y7-XbI" secondAttribute="trailing" constant="8" id="5ID-6m-d3O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ceI-xM-0J0" secondAttribute="bottom" constant="10" id="6M7-tP-wg1"/>
+                            <constraint firstItem="FNY-Y7-XbI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="D0w-gM-svh"/>
+                            <constraint firstItem="BPU-w4-SX4" firstAttribute="leading" secondItem="ceI-xM-0J0" secondAttribute="trailing" constant="8" id="E4O-Ll-mUw"/>
+                            <constraint firstItem="wQI-Li-Qxk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ecr-yr-aJM"/>
+                            <constraint firstItem="BPU-w4-SX4" firstAttribute="leading" secondItem="ceI-xM-0J0" secondAttribute="trailing" constant="100" id="G1g-sy-TJM"/>
+                            <constraint firstItem="Xj8-zZ-gdc" firstAttribute="leading" secondItem="dQp-VB-RYt" secondAttribute="trailing" constant="100" id="HBt-ss-51w"/>
+                            <constraint firstItem="FNY-Y7-XbI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="LYG-tH-ZkG"/>
+                            <constraint firstItem="BPU-w4-SX4" firstAttribute="leading" secondItem="ceI-xM-0J0" secondAttribute="trailing" constant="8" id="NnH-k1-Z0z"/>
+                            <constraint firstItem="Xj8-zZ-gdc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-11" id="Nu3-16-MpK"/>
+                            <constraint firstItem="Xj8-zZ-gdc" firstAttribute="leading" secondItem="dQp-VB-RYt" secondAttribute="trailing" constant="8" id="Rza-xy-3zi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BPU-w4-SX4" secondAttribute="bottom" constant="10" id="ScV-RQ-xw5"/>
+                            <constraint firstItem="csQ-7d-c3Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-11" id="Swz-xb-cXM"/>
+                            <constraint firstItem="Xj8-zZ-gdc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRc-4u-8cD"/>
+                            <constraint firstItem="FNY-Y7-XbI" firstAttribute="leading" secondItem="BPU-w4-SX4" secondAttribute="trailing" constant="8" id="Ul8-XK-PaB"/>
+                            <constraint firstItem="dQp-VB-RYt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-11" id="WZ8-KZ-mnw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BPU-w4-SX4" secondAttribute="trailing" constant="100" id="WxL-jC-I8c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NWk-24-FIO" secondAttribute="trailing" constant="-10" id="biW-Xk-hzb"/>
+                            <constraint firstItem="csQ-7d-c3Q" firstAttribute="leading" secondItem="Xj8-zZ-gdc" secondAttribute="trailing" constant="100" id="bkU-C2-TR9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dQp-VB-RYt" secondAttribute="leading" constant="5" id="e3J-O3-ST8"/>
+                            <constraint firstItem="ceI-xM-0J0" firstAttribute="leading" secondItem="FNY-Y7-XbI" secondAttribute="trailing" constant="100" id="f9h-O6-DTD"/>
+                            <constraint firstItem="ono-Bj-t4h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="hG8-Vs-PAi"/>
+                            <constraint firstItem="NWk-24-FIO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-16" id="oHf-cA-udb"/>
+                            <constraint firstItem="ono-Bj-t4h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ovs-65-GR6"/>
+                            <constraint firstItem="ceI-xM-0J0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p6c-2d-Tqv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FNY-Y7-XbI" secondAttribute="bottom" constant="10" id="vbJ-Qs-ZgM"/>
+                            <constraint firstItem="ceI-xM-0J0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMg-lU-JRE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wQI-Li-Qxk" secondAttribute="trailing" constant="2" id="zVt-1L-Mhb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HBt-ss-51w"/>
+                                <exclude reference="TRc-4u-8cD"/>
+                                <exclude reference="bkU-C2-TR9"/>
+                                <exclude reference="D0w-gM-svh"/>
+                                <exclude reference="Ul8-XK-PaB"/>
+                                <exclude reference="f9h-O6-DTD"/>
+                                <exclude reference="p6c-2d-Tqv"/>
+                                <exclude reference="zMg-lU-JRE"/>
+                                <exclude reference="E4O-Ll-mUw"/>
+                                <exclude reference="G1g-sy-TJM"/>
+                                <exclude reference="WxL-jC-I8c"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ChromeButton" destination="BPU-w4-SX4" id="fqy-LR-egb"/>
+                        <outlet property="HueButton" destination="FNY-Y7-XbI" id="bTB-0k-3lg"/>
+                        <outlet property="JButton" destination="ceI-xM-0J0" id="lVY-8I-Pcp"/>
+                        <outlet property="OptimizeButton" destination="NWk-24-FIO" id="83s-a7-gV0"/>
+                        <outlet property="displayChrome" destination="csQ-7d-c3Q" id="RL8-w7-Xry"/>
+                        <outlet property="displayHue" destination="dQp-VB-RYt" id="gyY-i2-blU"/>
+                        <outlet property="displayJ" destination="Xj8-zZ-gdc" id="5ig-Ek-Wod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="236"/>
+        </scene>
+    </scenes>
+</document>
